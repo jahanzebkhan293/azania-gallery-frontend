@@ -1,0 +1,74 @@
+
+/* =========================================================
+   AZANIA GALLERY — NAVBAR ACTION OUTLINE FIX
+   Account | Wishlist | Cart
+   Desktop + Mobile
+========================================================= */
+
+/* Desktop navbar action buttons and links */
+.navbar-actions .navbar-action,
+.navbar-actions .navbar-account-button,
+.navbar-actions .navbar-cart-action {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover, focus and active states */
+.navbar-actions .navbar-action:hover,
+.navbar-actions .navbar-action:focus,
+.navbar-actions .navbar-action:focus-visible,
+.navbar-actions .navbar-action:active,
+.navbar-actions .navbar-account-button:hover,
+.navbar-actions .navbar-account-button:focus,
+.navbar-actions .navbar-account-button:active,
+.navbar-actions .navbar-cart-action:hover,
+.navbar-actions .navbar-cart-action:focus,
+.navbar-actions .navbar-cart-action:focus-visible,
+.navbar-actions .navbar-cart-action:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Mobile Account and Wishlist links */
+.navbar-mobile-menu .mobile-account-link,
+.navbar-mobile-menu .mobile-wishlist-link {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile interaction states */
+.navbar-mobile-menu .mobile-account-link:hover,
+.navbar-mobile-menu .mobile-account-link:focus,
+.navbar-mobile-menu .mobile-account-link:focus-visible,
+.navbar-mobile-menu .mobile-account-link:active,
+.navbar-mobile-menu .mobile-wishlist-link:hover,
+.navbar-mobile-menu .mobile-wishlist-link:focus,
+.navbar-mobile-menu .mobile-wishlist-link:focus-visible,
+.navbar-mobile-menu .mobile-wishlist-link:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Cart quantity badge */
+.navbar-cart-count {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Keep navbar icons consistent */
+.navbar-actions .navbar-action-icon svg {
+  fill: none;
+  stroke: currentColor;
+}
+
+/* Remove browser tap highlight on navbar actions */
+.navbar-actions a,
+.navbar-actions button {
+  -webkit-tap-highlight-color: transparent;
+}

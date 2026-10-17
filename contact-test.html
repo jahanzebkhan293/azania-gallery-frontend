@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZANIA GALLERY Contact API Test</title>
+</head>
+<body>
+  <h2>AZANIA GALLERY Contact API Test</h2>
+
+  <button id="sendMessage">Send Test Message</button>
+
+  <pre id="result">Click the button to test the API.</pre>
+
+  <script>
+    document
+      .getElementById("sendMessage")
+      .addEventListener("click", async () => {
+        const result = document.getElementById("result");
+        const button = document.getElementById("sendMessage");
+
+        button.disabled = true;
+        result.textContent = "Sending test message...";
+
+        try {
+          const response = await fetch(
+            "http://localhost:5000/api/contact",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                name: "Test Customer",
+                email: "test@example.com",
+                subject: "Test Contact Message",
+                message: "This is a test message from AZANIA GALLERY."
+              })
+            }
+          );
+
+          const data = await response.json();
+
+          result.textContent = JSON.stringify(
+            {
+              httpStatus: response.status,
+              ...data
+            },
+            null,
+            2
+          );
+        } catch (error) {
+          result.textContent =
+            "Request failed: " + error.message +
+            "\nCheck that the backend is running on port 5000.";
+        } finally {
+          button.disabled = false;
+        }
+      });
+  </script>
+</body>
+</html>

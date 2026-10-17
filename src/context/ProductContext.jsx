@@ -21,7 +21,7 @@ const ProductContext = createContext(null);
 ===================================================== */
 
 const BACKEND_BASE_URL =
-  "http://localhost:5000";
+  "https://azaniagalleryy-backend-production.up.railway.app";
 
 /* =====================================================
    CONVERT IMAGE PATH TO FULL BACKEND URL

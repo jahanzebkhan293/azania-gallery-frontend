@@ -7,7 +7,7 @@ import API_BASE_URL from "../../services/api";
 import { useAuth } from "../../context/AuthContext";
 import "./OrderHistory.css";
 
-const BACKEND_BASE_URL = "http://localhost:5000";
+const BACKEND_BASE_URL = "https://azaniagalleryy-backend-production.up.railway.app";
 
 const getOrderImageUrl = (image) => {
   if (!image) {

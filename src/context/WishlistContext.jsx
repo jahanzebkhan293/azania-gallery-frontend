@@ -14,8 +14,7 @@ const WishlistContext = createContext(null);
    BACKEND BASE URL
 ===================================================== */
 
-const BACKEND_BASE_URL =
-  "http://localhost:5000";
+const BACKEND_BASE_URL ="https://azaniagalleryy-backend-production.up.railway.app/api";
 
 /* =====================================================
    CONVERT IMAGE PATH TO FULL BACKEND URL

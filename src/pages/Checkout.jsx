@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 
-const API_BASE_URL = "https://azaniagalleryy-backend-production.up.railway.app/api";
+const API_BASE_URL = "https://azania-galleryy-backend-production.up.railway.app/api";
 
 const Checkout = () => {
   const navigate = useNavigate();

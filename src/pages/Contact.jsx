@@ -156,7 +156,7 @@ function Contact() {
 
                 <div>
                   <span>Location</span>
-                  <strong>United States</strong>
+                  <strong>Pakistan</strong>
                 </div>
               </div>
 
@@ -171,7 +171,7 @@ function Contact() {
                   <strong>
                     Monday – Friday
                     <br />
-                    9:00 AM – 5:00 PM
+                    9:00 AM – 8:00 PM
                   </strong>
                 </div>
               </div>

@@ -19,7 +19,7 @@ const Checkout = () => {
     city: "",
     state: "",
     postalCode: "",
-    country: "United States",
+    country: "Pakistan",
     paymentMethod: "COD",
   });
 
